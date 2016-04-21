@@ -1,0 +1,8 @@
+/* add custom styles */
+
+.banner {
+    height: 60vh;
+    background-color: darkslategrey;
+    color: azure;
+    text-align: center;
+}
