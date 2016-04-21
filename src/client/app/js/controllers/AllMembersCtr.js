@@ -14,8 +14,9 @@ angular
         memberDataService.getAllMembers()
             .then(function(members) {
                 /* jshint validthis: true */
-                console.log('members', members)
-                vm.allMembers = members;
+                console.log('members', members.data.data)
+                vm.allMembers = members.data.data;
+                console.log('vm.allMembers');
 
             });
     }
