@@ -1,9 +1,20 @@
 
+<div class="container">
+    <div class="row">
+        <div class="banner col-md-12">
+            <h1 class="mori">The clock is ticking...
+                <button class="mori btn started-btn">Nothing Left to Lose</button>
+            </h1>
 
-<div ng-repeat="member in vm.allMembers">
-    <div class="welcome-members">
-        <img ng-src="{{member.avatar}}" alt="member.names.firstName" style="max-height:100%;max-width:100%" \>
-        <h3>Meet {{member.names.firstName}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-repeat="member in vm.allMembers">
+            <div class="welcome-members col-md-2">
+                <img ng-src="{{member.avatar}}" alt="member.names.firstName" style="max-height:100%;max-width:100%" \>
+                <h3>Meet {{member.names.firstName}}!</h3>
+            </div>
+        </div>
     </div>
 </div>
 
