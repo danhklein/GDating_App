@@ -2,10 +2,10 @@ angular
     .module('myApp')
     .service('crudService', 
         ['$http', function($http) {
-            var url = 'https://galvanize-student-apis.herokuapp.com/gdating/';
+
     return {
         getAll: function (resource) {
-            return $http.get(url + resource)
+            return $http.get(resource)
                 .then(function(res) {
                     return res;
                 })
@@ -15,7 +15,7 @@ angular
         },
         addOne: function(resource, payload) {
 
-            return $http.post('/'+resource, payload)
+            return $http.post(resource, payload)
                 .then(function(res) {
                     return res;
                 })
@@ -24,7 +24,7 @@ angular
                 });
         },
         deleteOne: function(resource, payload) {
-            return $http.delete('/'+resource + '/'+ req.body._id)
+            return $http.delete(resource + '/'+ req.body._id)
                 .then(function(res) {
                     return res;
                 })

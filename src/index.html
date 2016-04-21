@@ -2,27 +2,26 @@
 <html lang="en" ng-app='myApp'>
   <head>
     <meta charset="utf-8">
-    <title>Untitled</title>
+    <title>Home</title>
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     
     <link rel="stylesheet" type="text/css" href="client/app/css/main.css">
   </head>
   <body>
-
+    <ng-include src="'client/partials/nav.html'"></ng-include>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="banner">
-            <h1>No Mfan Is An Island.</h1>
+            <h1>No Man Is An Island.</h1>
             <h2>Could Wedding Bells Be Tolling For You?</h2>
           </div>
+          <div ng-view></div>
         </div>
 
       </div>
-      <div ng-controller="MyCtrl">
-        <p>{{ greeting }}</p>
-      </div>
+
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -33,7 +32,16 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.js"></script>
     <script type="text/javascript" src="client/app/js/main.js"></script>
     <script type="text/javascript" src="client/app.js"></script>
+    <script type="text/javascript" src="client/routes.js"></script>
+
     <script type="text/javascript" src="client/app/js/controllers/controller1.js"></script>
+    <script type="text/javascript" src="client/app/js/controllers/AllMembersCtr.js"></script>
+    <script type="text/javascript" src="client/app/js/services/membersDataService.js"></script>
+    <script type="text/javascript" src="client/app/js/services/crud.js"></script>
+
+
+
+
 
   </body>
 </html>

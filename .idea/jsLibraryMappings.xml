@@ -2,6 +2,8 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{dating_app node_modules}" />
+    <file url="file://$PROJECT_DIR$/src/client/partials/members.html" libraries="{angular}" />
+    <file url="file://$PROJECT_DIR$/src/index.html" libraries="{angular, angular-route}" />
     <file url="PROJECT" libraries="{angular-animate, angular-sanitize, bootstrap}" />
   </component>
 </project>
