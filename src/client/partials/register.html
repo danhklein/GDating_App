@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <form class="form" ng-submit="vm.register()">
+            <fieldset class="form-group">
+                <label>Email*</label>
+                <input ng-model="vm.user.email" class="form-control" type="email" required \>
+                <label>User Name* </label>
+                <input ng-model="vm.user.username" class="form-control" type="text" required \>
+                <label>Password* </label>
+                <input ng-model="vm.user.password" class="form-control" type="password" required \>
+                <label>First Name* </label>
+                <input ng-model = "vm.user.names.firstName" class="form-control" type="text" required \>
+
+                <label>Last Name </label>
+                <input ng-model = "vm.user.names.lastName" class="form-control" type="text" required \>
+                <label>Date of Birth* </label>
+                <input ng-model = "vm.user.dob" class="form-control" type="date" required \>
+                <label>Zip*</label>
+                <input ng-model = "vm.user.address.zipcode" class="form-control" type="text" required \>
+                <label>Profile Image</label>
+                <input ng-model="vm.user.avatar" class="form-control" type="text" \>
+                <button type="submit" class="btn btn-success">Register</button>
+            </fieldset>
+        </form>
+    </div>
+</div>

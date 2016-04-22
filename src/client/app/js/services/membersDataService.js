@@ -4,8 +4,14 @@
 
 angular
     .module('myApp')
-    .service('memberDataService', ['$rootScope', 'crudService', function($rootScope, crudService) {
-    var url = 'https://galvanize-student-apis.herokuapp.com/gdating/members?limit=10'
+    .service('memberDataService', memberDataService);
+
+ memberDataService.$inject = ['crudService'];
+    
+    
+    
+    function memberDataService (crudService) {
+    var url = 'https://galvanize-student-apis.herokuapp.com/gdating/members?limit=10';
     return {
         getAllMembers: function () {
             return crudService.getAll(url)
@@ -39,6 +45,6 @@ angular
                 .catch(function (err) {
                     return err;
                 });
-        },
+        }
     };
-}]);
+};

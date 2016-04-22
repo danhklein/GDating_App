@@ -1,1 +1,16 @@
-<h1>HERE WE ARE</h1>
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            Here we go
+        </div>
+    </div>
+    <div class="members-list col-md-4 col-lg-4"></div>
+        <div ng-repeat="member in vm.allMembers">
+            <h3>{{member.username}}!</h3>
+
+            <img ng-src="{{member.avatar}}" alt="member.names.username" style="max-height:100%;max-width:100%" \>
+
+
+        </div>
+    </div>
+</div>

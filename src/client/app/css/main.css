@@ -18,6 +18,10 @@ div.navbar-brand {
 
 }
 
+.members-list {
+    border-right: medium black;
+}
+
 .mori {
     display: table-cell;
     vertical-align: middle;

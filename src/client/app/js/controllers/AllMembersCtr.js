@@ -16,10 +16,11 @@ angular
                 /* jshint validthis: true */
                 console.log('members', members.data.data)
                 vm.allMembers = members.data.data;
-                console.log('vm.allMembers');
+                
 
             });
     }
 
-
 })();
+
+
